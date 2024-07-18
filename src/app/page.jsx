@@ -202,7 +202,7 @@ export default function Home() {
                       <TfiArrowRight className=" text-primary font-bold" />
                     </div>  
               </div>
-          </div>
+          </div> 
 
           <div className="container bg-transparent justify-items-center w-52">
               <div className=" flex flex-row justify-center mx-auto items-center">
@@ -218,7 +218,7 @@ export default function Home() {
                     <div className=" items-center flex-col">
                       <TfiArrowRight className=" text-primary font-bold" />
                     </div>  
-              </div>
+              </div>  
           </div>
 
           <div className="container bg-transparent justify-items-center w-52">
