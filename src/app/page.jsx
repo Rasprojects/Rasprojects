@@ -212,7 +212,7 @@ export default function Home() {
               Access to Finance helps you secure loans and funding to grow your farm with confidence
               </div>
               <div className=" flex items-center gap-2 justify-center mt-6">
-                    <div className="items-center flex-col font-bold ">
+                    <div className="items-center flex-col font-bold ">   
                         Read More 
                     </div> 
                     <div className=" items-center flex-col">
