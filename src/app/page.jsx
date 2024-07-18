@@ -96,14 +96,16 @@ export default function Home() {
 
     
     {/* Features Section */}
-    <div className="container-fluid relative justify-items-center w-full">
-      <Image src={features}  className=" w-full" style={{height:716}} />
-      <div className=" absolute inset-0 ">
+    <div className="container-fluid relative  w-full bg-primary mb-12" style={{height:"auto"}}>
+      {/* <Image src={features}  className=" w-full" style={{height:716}} /> */}
+      {/* <div className=" absolute inset-0 "> */}
+      <div>
           <div className=" grid grid-cols-1 items-center justify-center px-4 py-8">
             <span className=" md:text-4xl sm:text-3xl roboto-bold text-secondary mx-auto px-2">Features of RAS App</span>      
             <p className=" text-center text-white  mx-auto md:w-1/2 sm:w-[0.2]">
                 Your pocket farm advisor!  Get real-time market prices, connect with buyers & suppliers, access expert knowledge & build your farming community. Download & empower your success!
             </p>     
+            {/* Starting of the Cards */}
             <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-4 my-6">
               <div className="grid grid-col-1 container rounded-md shadow-md bg-secondary hover:ease-out place-items-center px-5 ml-2" style={{ width:312,height:390}}>           
                       <div className="place-center">
@@ -168,14 +170,16 @@ export default function Home() {
                             Learn More...
                           </Link>
                       </div>                
-              </div>              
+              </div>    
+              {/* End of Cards   */}
             </div>    
           </div>        
-      </div>
+      </div>         
+    </div>
 
-      {/* Our Services */}      
-      <div className=" container mx-auto place-content-center">
-            <div className="flex flex-row items-center justify-center mt-3"> 
+ {/* Our Services */} 
+    <div className=" container mx-auto place-content-center mb-12 md:px-12 sm:px-12">
+            <div className="flex flex-row items-center justify-center"> 
               <h1 className=" text-primary font-bold text-2xl">Our Services</h1>
             </div>
             <div className="flex flex-row items-center justify-center mt-3"> 
@@ -183,19 +187,17 @@ export default function Home() {
                   All-in-one Ag tool!  Get market updates, connect to your network, & access knowledge. Grow smarter, farm stronger.
               </p>
             </div>
-      </div>
     </div>
-
-    <div className=" grid grid-cols-3 gap-y-12 gap-x-3 my-6 mx-12 place-items-center ">
-        <div className="container bg-transparent  w-64 h-72 hover:border hover:shadow-md hover:rounded-md px-4 py-5">
+    <div className=" grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-y-12 gap-x-3 my-12 mx-12 place-items-center ">
+        <div className="container  w-64 h-72 border shadow-md rounded-xl px-4 py-5 justify-items-center" style={{ backgroundColor:'#F4F0EC'}}>
               <div className=" flex flex-row justify-center mx-auto items-center">
-                    <h1 className=" text-primary text-center text-1xl font-bold mb-4">Consultation</h1>
+                    <h1 className=" text-primary text-center text-1xl font-bold mb-4 mt-12">Consultation</h1>
               </div>
-              <div className=" text-center text-black ">
+              <div className=" text-center text-black">
               Our on-demand Consultancy service connects you with expert agronomists for tailored advice.
               </div>
               <div className=" flex items-center gap-2 justify-center my-6">
-                    <div className="items-center flex-col font-bold ">
+                    <div className="items-center flex-col font-bold">
                         Read More 
                     </div> 
                     <div className=" items-center flex-col">
@@ -204,9 +206,9 @@ export default function Home() {
               </div>
           </div> 
 
-          <div className="container bg-transparent justify-items-center w-52">
+           <div className="container  w-64 h-72 border shadow-md rounded-xl px-4 py-5 justify-items-center" style={{ backgroundColor:'#F4F0EC'}}>
               <div className=" flex flex-row justify-center mx-auto items-center">
-                    <h1 className=" text-primary text-center text-1xl font-bold mb-4">Access to Finance</h1>
+                    <h1 className=" text-primary text-center text-1xl font-bold mb-4 mt-12">Access to Finance</h1>
               </div>
               <div className=" text-center text-black ">
               Access to Finance helps you secure loans and funding to grow your farm with confidence
@@ -221,9 +223,9 @@ export default function Home() {
               </div>  
           </div>
 
-          <div className="container bg-transparent justify-items-center w-52">
+           <div className="container  w-64 h-72 border shadow-md rounded-xl px-4 py-5 justify-items-center" style={{ backgroundColor:'#F4F0EC'}}>
               <div className=" flex flex-row justify-center mx-auto items-center">
-                    <h1 className=" text-primary text-center text-1xl font-bold mb-4">Market Information</h1>
+                    <h1 className=" text-primary text-center text-1xl font-bold mb-4 mt-12">Market Information</h1>
               </div>
               <div className=" text-center text-black ">
               Get real-time market data and insights with Market Information. Never miss an oppurtunity
@@ -238,9 +240,9 @@ export default function Home() {
               </div>
           </div>
 
-          <div className="container bg-transparent justify-items-center w-52">
+           <div className="container  w-64 h-72 border shadow-md rounded-xl px-4 py-5 justify-items-center" style={{ backgroundColor:'#F4F0EC'}}>
               <div className=" flex flex-row justify-center mx-auto items-center">
-                    <h1 className=" text-primary text-center text-1xl font-bold mb-4">e-Market Linkage</h1>
+                    <h1 className=" text-primary text-center text-1xl font-bold mb-4 mt-12">e-Market Linkage</h1>
               </div>
               <div className=" text-center text-black ">
               e-Market Linkage connects you directly with buyers, ensuring you get the best deals for your crops.
@@ -255,9 +257,9 @@ export default function Home() {
               </div>
           </div>
 
-          <div className="container bg-transparent justify-items-center w-52">
+           <div className="container  w-64 h-72 border shadow-md rounded-xl px-4 py-5 justify-items-center" style={{ backgroundColor:'#F4F0EC'}}>
               <div className=" flex flex-row justify-center mx-auto items-center">
-                    <h1 className=" text-primary text-center text-1xl font-bold mb-4">Procurement</h1>
+                    <h1 className=" text-primary text-center text-1xl font-bold mb-4 mt-12">Procurement</h1>
               </div>
               <div className=" text-center text-black ">
               Find and purchase all the supplies you need conveniently through our Procurement service
@@ -272,9 +274,9 @@ export default function Home() {
               </div>
           </div>
 
-          <div className="container bg-transparent justify-items-center w-52">
+           <div className="container  w-64 h-72 border shadow-md rounded-xl px-4 py-5 justify-items-center" style={{ backgroundColor:'#F4F0EC'}}>
               <div className=" flex flex-row justify-center mx-auto items-center">
-                    <h1 className=" text-primary text-center text-1xl font-bold mb-4">Agricultural Knowledge</h1>
+                    <h1 className=" text-primary text-center text-1xl font-bold mb-4 mt-12">Agricultural Knowledge</h1>
               </div>
               <div className=" text-center text-black ">
               Access a wealth of articles, videos, and expert advice with our Knowledge library.
