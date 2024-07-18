@@ -107,7 +107,7 @@ export default function Home() {
             </p>     
             {/* Starting of the Cards */}
             <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-4 my-6">
-              <div className="grid grid-col-1 container rounded-md shadow-md bg-secondary hover:ease-out place-items-center px-5 ml-2" style={{ width:312,height:390}}>           
+              <div className="grid grid-col-1 container rounded-md shadow-md bg-secondary animate-fade-up animate-twice   hover:ease-out place-items-center px-5 ml-2" style={{ width:312,height:390}}>           
                       <div className="place-center">
                           <div className=" rounded-full bg-primary mt-4 place-content-center" style={{width:80,height:80}}>   
                             <CiMap className="w-12 h-12 mx-auto text-white"/>                       
@@ -289,9 +289,52 @@ export default function Home() {
                       <TfiArrowRight className=" text-primary font-bold" />
                     </div>  
               </div>
-          </div>
-
+          </div>       
     </div>
+
+    <footer className=" container-fluid bg-primary w-full h-auto text-white px-4 py-3 my-4">
+          <div className="grid sm:grid-cols-1 md:grid-cols-5 md:gap-2 gap-2 justify-center my-5">
+                <div className="container px-4 py-2">
+                </div>
+                <div className="container px-4 py-2">
+                  <p>We aim to bridge the gap between farmers and the information they need to succeed in a competitive and ever-changing agricultural landscape.</p>
+                </div>
+                <div className="container px-4 py-2">
+                  <div className="flex flex-row">
+                      <span className=" font-bold text-white">Pages</span>
+                  </div>
+                  <div className="grid grid-cols-1">
+                        <div className="flex flex-row my-2">Home</div>
+                        <div className="flex flex-row my-2">About Us</div>
+                        <div className="flex flex-row my-2">Services</div>
+                        <div className="flex flex-row my-2">Features</div>
+                        <div className="flex flex-row my-2">Our Team</div>
+                  </div>
+                </div>
+                <div className="container px-4 py-2">
+                  <div className="flex flex-row">
+                      <span className=" font-bold text-white">Features</span>
+                  </div>
+                  <div className="grid grid-cols-1">
+                        <div className="flex flex-row my-2">Weather Report</div>
+                        <div className="flex flex-row my-2">Market Price</div>
+                        <div className="flex flex-row my-2">e-Market Linkage</div>
+                        <div className="flex flex-row my-2">Consultancy</div>
+                        <div className="flex flex-row my-2">Access to Finance</div>
+                  </div>                  
+                </div>
+                <div className="container px-4 py-2">
+                  <div className="flex flex-row">
+                      <span className=" font-bold text-white">Contact</span>
+                  </div>
+                  <div className="grid grid-cols-1">
+                        <div className="flex flex-row my-2">3rd Floor Abdullahi Yero House Ali Akilu Kaduna.</div>
+                        <div className="flex flex-row my-2">info@rasproject.ng</div>
+                        <div className="flex flex-row my-2">+234 (080) 38863790</div>
+                  </div>
+                </div>
+          </div>
+    </footer>
     </main>
   );
 }

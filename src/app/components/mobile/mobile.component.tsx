@@ -1,4 +1,5 @@
 import { Baloo_Bhaina_2 } from "next/font/google";
+import Link from "next/link";
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { TfiClose, TfiMenu } from "react-icons/tfi";
@@ -22,26 +23,45 @@ export function MobileHeader() {
                 </div>
             </div>
             {/* Menu Items */}
-            <div className={`menu-container ${isOpen ? 'h-auto' : 'h-0'} transition-height duration-300 ease-out  ease-out  overflow-hidden bg-secondary`}>
-                <ul className="p-2">
-                    <div className="container-fluid roboto-bold  hover:text-white  hover:bg-primary">
-						<li className="p-2">Home</li>
-					</div>
-					<div className="container-fluid roboto-bold  hover:text-white  hover:bg-primary">
-						<li className="p-2">Features</li>
-					</div>
-					<div className="container-fluid roboto-bold  hover:text-white hover:bg-primary">
-						<li className="p-2">About</li>
-					</div>
-					<div className="container-fluid roboto-bold  hover:text-white hover:bg-primary">
-						<li className="p-2">Services</li>
-					</div>
-					<div className="container-fluid roboto-bold  hover:text-white focus:ease-in-out hover:bg-primary">
-						<li className="p-2">Membership</li>
-					</div>
-					
-                </ul>
-            </div>
+            <div className={`menu-container ${isOpen ? 'h-auto' : 'h-0'} transition-opacity duration-300 overflow-hidden bg-secondary`}>
+            <ul className="p-2">
+                <div className="container-fluid roboto-bold hover:text-white hover:bg-primary">
+                    <li className="p-2">
+                        <Link href="/">
+                            <span className="block">Home</span>
+                        </Link>
+                    </li>
+                </div>
+                <div className="container-fluid roboto-bold hover:text-white hover:bg-primary">
+                    <li className="p-2">
+                        <Link href="/features">
+                            <span className="block">Features</span>
+                        </Link>
+                    </li>
+                </div>
+                <div className="container-fluid roboto-bold hover:text-white hover:bg-primary">
+                    <li className="p-2">
+                        <Link href="/about">
+                            <span className="block">About</span>
+                        </Link>
+                    </li>
+                </div>
+                <div className="container-fluid roboto-bold hover:text-white hover:bg-primary">
+                    <li className="p-2">
+                        <Link href="/services">
+                            <span className="block">Services</span>
+                        </Link>
+                    </li>
+                </div>
+                <div className="container-fluid roboto-bold hover:text-white hover:bg-primary">
+                    <li className="p-2">
+                        <Link href="/membership">
+                            <span className="block">Membership</span>
+                        </Link>
+                    </li>
+                </div>
+            </ul>
+        </div>
         </>
     );
 }
